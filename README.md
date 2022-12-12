@@ -124,8 +124,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **Which one is NOT a business driver for a BYOD solution?**
 
     a. Need for employees to work anywhere & anytime
-    b. Increase in the type of devices needed & used by employees to connect to 
-corporate network
+    b. Increase in the type of devices needed & used by employees to connect to corporate network
     c. √ The lack of IPv4 address space
     d. Fluidity of today’s work schedules
 
