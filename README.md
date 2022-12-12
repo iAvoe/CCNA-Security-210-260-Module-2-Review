@@ -217,6 +217,21 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
    - Hijacking
    - MITM
 
-**Is human element vulnerable in WLAN attacks, what can admins do**
+**Is human element vulnerable in WLAN attacks, what can admins do:**
  - Yes, untrained human element is vulnerable to phishing and fake-SSID-MITMs
  - Countermeasure: training, WIPS
+
+**List all possible WLAN attack and  countermeasures:**
+
+|     Attack   types                   |     Countermeasures                                                                             |
+|--------------------------------------|-------------------------------------------------------------------------------------------------|
+|     Eavesdropping   / Mapping        |     Directional   Antennas, SSID hiding                                                         |
+|     Traffic   Analysis / Spoofing    |     Mandate   AES128 WiFi encryption                                                            |
+|     Hijacking                        |     Mandate   AES128 WiFi encryption                                                            |
+|     Replay                           |     Regular   firmware updates                                                                  |
+|     MAC   Masquerade                 |     WPA2   Enterprise, ACL+DHCP shield                                                          |
+|     DNS   Spoofing                   |     Mandate   AES128 WiFi encryption                                                            |
+|     WLAN   DoS                       |     STP,   Ether Channel, limit bandwidth                                                       |
+|     Password   dict. attack          |     Mandate   WPA2 Enterprise                                                                   |
+|     Rogue   APs                      |     Implement   WIPS, shutdown unused ports, VLAN separation, ZPF, Policy & video   training    |
+|     Social   Engineering             |     Policy   & video training                                                                   |
