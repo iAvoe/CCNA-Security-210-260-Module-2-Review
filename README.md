@@ -197,3 +197,26 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
     b. √ Security of the overall MDM solution
     c. Flexibility in deploying the MDM solution
     d. Speed of deployment of MDM solution
+
+**Explain Wardriving/Warwalking/Warflying**:
+ - Depending on transportation method (cars, bicycle, drones, RCs)
+ - Scanning for WiFi signals
+
+**List all differences inbetween AP & Routers**
+ - Router could be wired only, AP could only be wireless
+ - AP cannot perform routing and works in lower OSI layer
+ - Business routers usually are wires only
+
+**List all passive and active WLAN attacks**
+ - Passive
+   - Breaking WEP/WPA/WPA2 encryption
+   - sniffing
+ - Active
+   - Injection
+   - Jamming
+   - Hijacking
+   - MITM
+
+**Is human element vulnerable in WLAN attacks, what can admins do**
+ - Yes, untrained human element is vulnerable to phishing and fake-SSID-MITMs
+ - Countermeasure: training, WIPS
