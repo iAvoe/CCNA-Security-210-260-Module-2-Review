@@ -1,6 +1,6 @@
 # CCNA-Security-210-260-Module-2-Review
 ### 3 - Implementing AAA in Cisco IOS
-
+https://medium.com/training-course-ccna-security-210-260/ccna-security-part-3-implementing-aaa-in-cisco-ios-4b13ab285f51
 
 **What of the following are most likely used for authentication of a network admin accessing CLI of a Cisco router?** (Multiple Choice)
 
@@ -116,3 +116,85 @@
  - Left panel --> Access Policies --> Authorization
  - Click the same user as prev
  - Edit the command set (e.g., PermitAnyCommand)
+
+
+### 4 - Bring Your Own Device (BYOD)
+https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-cards/?funnelUUID=4964f29c-a461-4158-b9d6-663ab0a3119e
+
+**Which one is NOT a business driver for a BYOD solution?**
+
+    a. Need for employees to work anywhere & anytime
+    b. Increase in the type of devices needed & used by employees to connect to 
+corporate network
+    c. √ The lack of IPv4 address space
+    d. Fluidity of today’s work schedules
+
+**Which component provides Wi-Fi access for employees in home offices, branch offices, & on corporate campus?**
+
+    a. WLAN controllers (WLC)
+    b. Cisco AnyConnect Client
+    c. √ Wireless access points (AP)
+    d. Identity Services Engine (ISE)
+
+**The RSA SecurID server/applicationprovides:**
+
+    a. Authentication, authorization, accounting (AAA) functions
+    b. √ One-time password (OTP) capabilities
+    c. 802.1X enforcement
+    d. VPN access
+
+**The Identity Services Engine (ISE) provides:**
+
+    a. Access, authentication, accounting
+    b. √ Authentication, authorization, accounting
+    c. Access, authorization, accounting
+    d. Authentication, authorization, access
+
+**Which of the following is not enabled through Cisco AnyConnect Client?**
+
+    a. 802.1X
+    b. VPN
+    c. √ AAA
+    d. Posture checking
+
+**The purpose of the RSA SecurID server/application is to provide:**
+
+    a. Authentication, authorization, accounting (AAA) functions
+    b. √ One-time password (OTP) capabilities
+    c. 802.1X enforcement
+    d. VPN access
+
+**The purpose of the certificate authority (CA) is to ensure:**
+
+    a. BYOD endpoints are posture checked
+    b. √ BYOD endpoints belong to the organization
+    c. BYOD endpoints have no malware installed
+    d. BYOD users exist in the corporate LDAP directory
+
+**The Identity Services Router (ISR) PRIMARILY provides:**
+
+    a. √ Connectivity in the home office environment back to the corporate campus
+    b. WAN & Internet access for users on the corporate campus
+    c. Firewall-type filtering in the data center
+    d. Connectivity for the mobile phone environment back to the corporate campus
+
+**Which is not a function of mobile device management (MDM)?**
+
+    a. Enforce strong passwords on BYOD devices
+    b. √ Deploy software updates to BYOD devices
+    c. Remotely wipe data from BYOD devices
+    d. Enforce data encryption requirements on BYOD devices
+
+**Which is not an advantage of an On-Premise MDM solution?**
+
+    a. Higher level of control over the BYOD solution
+    b. √ Ease of deployment & operation of the BYOD solution
+    c. Ability to meet regulatory requirements
+    d. Security of the overall BYOD solution
+
+**Which is not an advantage of a cloud-based MDM solution?**
+
+    a. Scalability of the MDM solution
+    b. √ Security of the overall MDM solution
+    c. Flexibility in deploying the MDM solution
+    d. Speed of deployment of MDM solution
