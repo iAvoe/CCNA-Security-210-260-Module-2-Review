@@ -321,6 +321,23 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - known as "Robust Security Network" (RSN), a standard that contributes to WPA, WPA2 and later technologies
  - 'THE' WPA2
 
+**Explain IEEE 802.11x:**
+ - 'THE' WPA2-Enterprise
+ - Eliminates the security risks of PSKs by not using it
+   - Mandates RADIUS server for AAA & logging
+ - Puts a damper on snooping
+ - Enables enhanced security methods
+ - Authentication methods can be extended to the wired network
+ - VLANs can be dynamically assigned
+ - Enables additional controls
+ - Supports Network Access Protection (NAP)
+
+**Explain RADIUS server authentication:**
+ - Secure EAP authentication protocol
+ - The EAP Tunnel prevents authentication packet from being read
+ - PEAP-MSCHAPv2 and EAP-TLS encrypt all information sent through the air
+ - Not easily to setup & manage even for SOHO networks
+
 **Explain Wi-Fi Protected Access 3 (WPA3):**
  - *Brute Force Protection*: more secure even with weaker passwords
  - *Public Network Privacy*: every end-device's traffics are encrypted, even when no passwords are set for the WiFi
