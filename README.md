@@ -268,3 +268,47 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - Regularly perform vulnerability assessments on your WLAN workstations
  - Enforce strong user passwords
  - Use antivirus software & antispyware software
+ - SSID hiding (still can be figured out by attackers easily, however)
+
+**Explain SSID hiding and its weakness:**
+ - disable SSID broadcast, thus common attacks cannot find the WiFi name
+ - attacker could monitor, for connected clients, at that time data packets from clients will reveal SSID
+
+**Explain methodology to conquer SSID hiding:**
+ - **kaliLinux - aircrack suite:**
+    - airmon-ng start wlan0
+    - airodump-ng wlan0mon (find channel number under BSSID order)
+    - airodump-ng -c <channel#> wlan0mon (specify channel to listen)
+    - (wait for any clients to show up and reveal the SSID)
+    - aireplay-ng (de-authenticate client devices from WLAN)
+ - **Gerix WiFi Cracker - monitor mode**
+    - enable monitor mode
+    - select the target network, or click rescan
+    - go to WPA tab > General > Start Sniffing and Logging
+    - then go to WPA Attack > AutoLoad victim clients (MAC cloning)
+    - click Client Deauthentication to send deauth packets to clients
+    - set deauth to 10
+    - Gerix will be connected to target network
+
+**Explain Wired Equivalent Privacy (WEP):**
+ - uses a static key of 10 or 26 hex-digits to encrypt data
+ - Includes a Cycle Redundancy Check (CRC), this is useful against replay attacks, but not strong
+ - attackers are able to easily guess the static key to gain access
+ - WEP only supports 64 or 128bit encryption key sizes, which is weak compared to 256bit key.
+ - hexadecimal digits significatly limites the dictionary complexity
+ - A WEP-protected network can be cracked under a minute
+
+**Explain Wi-Fi Protected Access (WPA):**
+ - WPA uses temporal key integral protocol (WPA-TKIP / Message Integrity Check) to dynamically alter the key
+   - TKIP is better against replay attacks than CRC
+ - Or, use Advanced Encryption Standard (WPA-AES, less widly supported)
+   - AES is more secure & faster than TKIP
+ - Still can be compormised by bruteforce cracking & pre-shared key cracking from Aircrack-suite & Gerix
+ - now retired as WEP
+
+**Explain Wi-Fi Protected Access 2 (WPA2):**
+ - 2 types: WPA2 personal & WPA2 enterprise
+ - Personal: DES-CCMP encryption
+ - Enterprise: AES encryption, but still supports TKIP
+
+**Explain 802.11i:** known as "Robust Security Network" (RSN), a standard that contributes to WPA, WPA2 and later technologies
