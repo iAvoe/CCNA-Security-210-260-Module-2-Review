@@ -337,6 +337,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - The EAP Tunnel prevents authentication packet from being read
  - PEAP-MSCHAPv2 and EAP-TLS encrypt all information sent through the air
  - Not easily to setup & manage even for SOHO networks
+ - You could setup home router as the RADIUS server, however
 
 **Explain Wi-Fi Protected Access 3 (WPA3):**
  - *Brute Force Protection*: more secure even with weaker passwords
