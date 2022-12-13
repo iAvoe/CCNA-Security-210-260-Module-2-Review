@@ -232,7 +232,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - Countermeasure: training, WIPS
 
 **List human errors that could compormise a network**
- - Misconfiguration (e.g., Microsoft Azure admin accidentally switched dmz from private to public)
+ - Misconfiguration: using WEP or Open-System WiFi (e.g., Microsoft Azure admin accidentally switched dmz from private to public)
  - Bad habits: plugging their AP to corp network
  - Bad installation: APs are installed too easy to reach
  - Ad-hoc network (WANET): employee using hotspots, blue-tooth to pass files
@@ -294,6 +294,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **Explain Pre-shared key (PSK)**:
  - WPA-PSK are used for traffic encryption to securely communicate
  - 'THE' WiFi password
+ - Part of information used to encrypt data
 
 **Explain Wired Equivalent Privacy (WEP):**
  - uses a static key of 10 or 26 hex-digits to encrypt data
@@ -316,8 +317,9 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - Personal: DES-CCMP encryption
  - Enterprise: AES encryption, but outside the standard some devices still supports TKIP
 
-**Explain 802.11i:**
+**Explain IEEE 802.11i:**
  - known as "Robust Security Network" (RSN), a standard that contributes to WPA, WPA2 and later technologies
+ - 'THE' WPA2
 
 **Explain Wi-Fi Protected Access 3 (WPA3):**
  - *Brute Force Protection*: more secure even with weaker passwords
@@ -325,3 +327,6 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
  - *Internet of Things (IoT) Security*: development of basline security makes WPA3 better with IoT networks
  - 192-bit AES encryption 
 
+**Compare AES and TKIP:**
+ - TKIP was a quick fix of WEP developed before AES
+ - AES offers much better security and performance than TKIP
