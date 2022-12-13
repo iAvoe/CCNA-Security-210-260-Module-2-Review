@@ -234,6 +234,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **List human errors that could compormise a network**
  - Misconfiguration (e.g., Microsoft Azure admin accidentally switched dmz from private to public)
  - Bad habits: plugging their AP to corp network
+ - Bad installation: APs are installed too easy to reach
  - Ad-hoc network (WANET): employee using hotspots, blue-tooth to pass files
  - Weak passwords: 12345678
  - Phishing emails
@@ -290,6 +291,10 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
     - set deauth to 10
     - Gerix will be connected to target network
 
+**Explain Pre-shared key (PSK)**:
+ - WPA-PSK are used for traffic encryption to securely communicate
+ - 'THE' WiFi password
+
 **Explain Wired Equivalent Privacy (WEP):**
  - uses a static key of 10 or 26 hex-digits to encrypt data
  - Includes a Cycle Redundancy Check (CRC), this is useful against replay attacks, but not strong
@@ -301,7 +306,7 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **Explain Wi-Fi Protected Access (WPA):**
  - WPA uses temporal key integral protocol (WPA-TKIP / Message Integrity Check) to dynamically alter the key
    - TKIP is better against replay attacks than CRC
- - Or, use Advanced Encryption Standard (WPA-AES, less widly supported)
+ - Or, use Advanced Encryption Standard (WPA-AES, lessly supported by hardware solution providers)
    - AES is more secure & faster than TKIP
  - Still can be compormised by bruteforce cracking & pre-shared key cracking from Aircrack-suite & Gerix
  - now retired as WEP
@@ -309,6 +314,14 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **Explain Wi-Fi Protected Access 2 (WPA2):**
  - 2 types: WPA2 personal & WPA2 enterprise
  - Personal: DES-CCMP encryption
- - Enterprise: AES encryption, but still supports TKIP
+ - Enterprise: AES encryption, but outside the standard some devices still supports TKIP
 
-**Explain 802.11i:** known as "Robust Security Network" (RSN), a standard that contributes to WPA, WPA2 and later technologies
+**Explain 802.11i:**
+ - known as "Robust Security Network" (RSN), a standard that contributes to WPA, WPA2 and later technologies
+
+**Explain Wi-Fi Protected Access 3 (WPA3):**
+ - *Brute Force Protection*: more secure even with weaker passwords
+ - *Public Network Privacy*: every end-device's traffics are encrypted, even when no passwords are set for the WiFi
+ - *Internet of Things (IoT) Security*: development of basline security makes WPA3 better with IoT networks
+ - 192-bit AES encryption 
+
