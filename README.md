@@ -198,9 +198,16 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
     c. Flexibility in deploying the MDM solution
     d. Speed of deployment of MDM solution
 
+
+### 4B - WLAN Security: attacks & countermeasures
+
+**The core difference inbetween active & passive WLAN attacks depends on**:
+ - action of manipulating data in transit
+ - action happens on/off the target network
+
 **Explain Wardriving/Warwalking/Warflying**:
  - Depending on transportation method (cars, bicycle, drones, RCs)
- - Scanning for WiFi signals
+ - Anyone who is scanning for free WiFis
 
 **List all differences inbetween AP & Routers**
  - Router could be wired only, AP could only be wireless
@@ -210,18 +217,34 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 **List all passive and active WLAN attacks**
  - Passive
    - Breaking WEP/WPA/WPA2 encryption
-   - sniffing
+   - Sniffing
+   - Replay
+   - Footprinting / Topology mapping (ping scan to learn network topology)
  - Active
    - Injection
    - Jamming
    - Hijacking
    - MITM
+   - DoS
 
-**Is human element vulnerable in WLAN attacks, what can admins do:**
+**Is human element vulnerable in WLAN attacks, what can admins do to mitigate?**
  - Yes, untrained human element is vulnerable to phishing and fake-SSID-MITMs
  - Countermeasure: training, WIPS
 
-**List all possible WLAN attack and  countermeasures:**
+**List human errors that could compormise a network**
+ - Misconfiguration (e.g., Microsoft Azure admin accidentally switched dmz from private to public)
+ - Bad habits: plugging their AP to corp network
+ - Ad-hoc network (WANET): employee using hotspots, blue-tooth to pass files
+ - Weak passwords: 12345678
+ - Phishing emails
+ - Connect random USB drives found in bathroom to corp PC
+ - APs left unconfigured
+ - Remote management enabled on routers and switches
+ - Using omnidirectional antennas rather than directional
+ - Lack of MAC-address filtering
+ - VMs stored away for too long and lack of security updates
+
+**List all possible WLAN attack and countermeasures:**
 
 |     Attack   types                   |     Countermeasures                                                                             |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -235,3 +258,13 @@ https://quizlet.com/363296085/ccna-security-210-260-byod-chapter-cuatro-flash-ca
 |     Password   dict. attack          |     Mandate   WPA2 Enterprise                                                                   |
 |     Rogue   APs                      |     Implement   WIPS, shutdown unused ports, VLAN separation, ZPF, Policy & video   training    |
 |     Social   Engineering             |     Policy   & video training                                                                   |
+
+**List all possible WLAN countermeasures:**
+ - Secure your Linux and Windows OSes (OS updates)
+ - Prevent null sessions. (i.e. Block NetBIOS by preventing TCP 139, 445 from passing throughfirewall(s) and/or Disable File and Print Sharing for Microsoft Networks)
+ - Install (& require) personal firewall software for every WLAN PC
+ - Disable unnecessary services & protocols on APs
+ - Apply latest firmware patches for AP, WLAN NICs, client mgmt. software, workstations, VMs
+ - Regularly perform vulnerability assessments on your WLAN workstations
+ - Enforce strong user passwords
+ - Use antivirus software & antispyware software
